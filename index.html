@@ -18,5 +18,185 @@
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
   </head>
-  <body></body>
+  <body>
+      <!-- nav -->
+      <nav class="navbar">
+        <div class="navbar__logo">
+          <a href="" class="navbar__logo__a"
+            ><img
+              src="./image/favicon.png"
+              alt="logo"
+              class="navbar__logo__img"
+          /></a>
+          <a href="" class="navbar__logo__a"
+            ><span class="navbar__logo__name">jaeseon</span></a
+          >
+        </div>
+        <div class="navbar__menu">
+          <button class="menu__item" data-key=".home">Home</button>
+          <button class="menu__item" data-key=".about">About</button>
+          <button class="menu__item" data-key=".skills">Skills</button>
+          <button class="menu__item" data-key=".work">Works</button>
+          <button class="menu__item" data-key=".contact">Contact</button>
+        </div>
+        <button class="toggle"><i class="fas fa-bars"></i></button>
+      </nav>
+      <!-- home -->
+      <section class="home">
+        <div class="home__container">
+          <img src="./image/jaeseon.jpg" alt="my photo" class="home__img" />
+          <h1>Hello, I am Passionate Coder</h1>
+          <h2>프론트엔드 개발자가 꿈인 염재선입니다.</h2>
+          <button class="home__contact">CONTACT ME</button>
+        </div>
+      </section>
+    </section>
+    <!-- about -->
+    <section class="about section">
+      <div class="about__description">
+        <h1>About me</h1>
+        <p>
+          한국기술교육대학교에서 컴퓨터공학을 전공했으며 웹에 관심이 많아
+          프론트엔드 분야를 공부해왔고 현재 BCSD LAB에서 프론트엔드 레귤러로
+          활동중입니다
+        </p>
+      </div>
+      <div class="about__skills">
+        <div class="about__skill">
+          <div class="about__skill__border">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h3>HTML</h3>
+        </div>
+        <div class="about__skill">
+          <div class="about__skill__border">
+            <i class="fab fa-css3"></i>
+          </div>
+          <h3>CSS</h3>
+        </div>
+        <div class="about__skill">
+          <div class="about__skill__border">
+            <i class="fab fa-js"></i>
+          </div>
+          <h3>JavaScript</h3>
+        </div>
+        <div class="about__skill">
+          <div class="about__skill__border">
+            <i class="fab fa-react"></i>
+          </div>
+          <h3>React</h3>
+        </div>
+      </div>
+      <div class="about__me">
+        <div class="me">
+          <img src="./image/koreatech.png" alt="대학" class="me__school" />
+          <div class="me__description">
+            <div class="me__description__where">한국기술 교육대학교 재학중</div>
+            <div class="me__description__term">2016 ~ until now</div>
+          </div>
+        </div>
+        <div class="me">
+          <img
+            src="https://static.koreatech.in/assets/bcsdlab_img/favicon.ico"
+            alt="동아리"
+            class="me__school"
+          />
+          <div class="me__description">
+            <div class="me__description__where">BCSDLAB</div>
+            <div class="me__description__term">2020 ~ until now</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skills -->
+    <section class="skills section">
+      <h1>Skills</h1>
+      <h3>Skills & Attributes</h3>
+      <p>
+        html, css, javascript를 중심으로 공부했고 프론트엔드 라이브러리인
+        React와 기술인 Redux를 사용할줄 압니다
+      </p>
+      <div class="skills__table">
+        <div class="table__skills">
+          <h3 class="skills__title">Skills</h3>
+          <div class="table__skills__lists">
+            <div class="list">
+              <div class="list__item">
+                <span class="list__title">HTML</span>
+                <span class="list__percentage">99%</span>
+              </div>
+              <div class="list__outer">
+                <div class="list__inner html"></div>
+              </div>
+            </div>
+            <div class="list">
+              <div class="list__item">
+                <span class="list__title">CSS</span>
+                <span class="list__percentage">70%</span>
+              </div>
+              <div class="list__outer">
+                <div class="list__inner css"></div>
+              </div>
+            </div>
+            <div class="list">
+              <div class="list__item">
+                <span class="list__title">JAVASCRIPT</span>
+                <span class="list__percentage">60%</span>
+              </div>
+              <div class="list__outer">
+                <div class="list__inner js"></div>
+              </div>
+            </div>
+            <div class="list">
+              <div class="list__item">
+                <span class="list__title">REACT</span>
+                <span class="list__percentage">70%</span>
+              </div>
+              <div class="list__outer">
+                <div class="list__inner react"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="table__rest">
+          <div class="rest__tools">
+            <h3 class="skills__title">Tools</h3>
+            <div class="tools__list">
+              <p>Visual Code</p>
+              <p>Source Tree</p>
+            </div>
+          </div>
+          <div class="rest__etc">
+            <h3 class="skills__title">Etc</h3>
+            <div class="etc__list">
+              <p>Git</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- my work -->
+    <section class="work section">
+      <h1>My work</h1>
+      <h3>Projects</h3>
+      <div class="work__menu">
+        <button class="menu__btn">All</button>
+        <button class="menu__btn">HTML,CSS</button>
+        <button class="menu__btn">HTML,CSS,JavaScript</button>
+        <button class="menu__btn">React</button>
+      </div>
+      <div class="work__lists"></div>
+    </section>
+    <!-- contact -->
+    <footer class="contact section">
+      <h1>Let's talk</h1>
+      <h3>a89541457@gmail.com</h3>
+      <a href="https://github.com/YeomJaeSeon"><i class="fab fa-github"></i></a>
+      <p>2020 Dream Coding Jaeseon - All rights reserved</p>
+    </footer>
+    <!-- arrow up  -->
+    <button class="arrow">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </body>
 </html>
